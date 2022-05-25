@@ -8,7 +8,7 @@ https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html
 
 Publish the docker image:
 
-0. `aws configure` and set the credentials
+0. `aws configure` and set the credentials. Before setting up the configuration, you need to create a new access key from AWS console. 
 
 1. `aws ecr get-login-password --region ${region} | docker login --username AWS --password-stdin ${registryUrl}`
 
